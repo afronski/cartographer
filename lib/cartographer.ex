@@ -1,0 +1,2 @@
+defmodule Geohashex do
+end

@@ -1,0 +1,9 @@
+# Binaries:
+/_build
+*.ez
+
+# Dependencies:
+/deps
+
+# Crash dumps:
+erl_crash.dump
