@@ -2,8 +2,9 @@
 /_build
 *.ez
 
-# Dependencies:
+# Dependencies and Coverage:
 /deps
+/cover
 
 # Crash dumps:
 erl_crash.dump
