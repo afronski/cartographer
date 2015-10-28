@@ -4,12 +4,15 @@ defmodule Cartographer.Mixfile do
   def project do
     [
       app: :cartographer,
+
       version: "0.0.1",
-      elixir: "~> 1.1",
-      build_embedded: Mix.env == :prod,
-      start_permanent: Mix.env == :prod,
+      elixir: "~> 1.0",
+
+      test_coverage: [tool: Coverex.Task],
+
       deps: deps,
-      test_coverage: [tool: Coverex.Task]
+      package: package,
+      description: description
     ]
   end
 
@@ -26,5 +29,23 @@ defmodule Cartographer.Mixfile do
       {:excheck, "~> 0.3", only: :test},
       {:triq, github: "krestenkrab/triq", only: :test}
     ]
+  end
+
+  defp package do
+    [
+      files: [ "lib", "mix.exs", "README*", "LICENSE*" ],
+      maintainers: [ "Wojtek Gawroński" ],
+      licenses: [ "MIT" ],
+      links: %{
+        "GitHub" => "https://github.com/afronski/cartographer",
+        "Docs" => "https://github.com/afronski/cartographer/wiki"
+      }
+    ]
+  end
+
+  defp description do
+    """
+    Geohash algorithm implementation in Elixir.
+    """
   end
 end
