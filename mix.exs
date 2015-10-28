@@ -19,6 +19,9 @@ defmodule Cartographer.Mixfile do
   end
 
   defp deps do
-    []
+    [
+      {:excheck, "~> 0.3", only: :test},
+      {:triq, github: "krestenkrab/triq", only: :test}
+    ]
   end
 end

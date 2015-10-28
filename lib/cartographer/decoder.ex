@@ -45,7 +45,7 @@ defmodule Cartographer.Decoder do
   end
 
   defp _decode([], min, max, precision) do
-    min(max, max(min, _round((min + max) / 2.0, precision)))
+    _round(min(max, max(min, (min + max) / 2.0)), precision)
   end
 
   defp _decode([ 0 | rest], min, max, precision) do

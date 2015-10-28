@@ -66,8 +66,8 @@ defmodule Cartographer.Encoder do
          lng >= @min_lng and
          lng <= @max_lng
   do
-  result = _encode(0, length * Cartographer.base32_size, @min_lat, @max_lat, @min_lng, @max_lng, lat, lng, <<>>)
-  Cartographer.to_geohash(result)
+    result = _encode(0, length * Cartographer.base32_size, @min_lat, @max_lat, @min_lng, @max_lng, lat, lng, <<>>)
+    Cartographer.to_geohash(result)
   end
 
   defp _encode(i, precision, _minLat, _maxLat, _minLng, _maxLng, _lat, _lng, result) when i >= precision do
