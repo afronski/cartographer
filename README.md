@@ -1,6 +1,6 @@
 # cartographer
 
-Geohash algorithm implementation in Elixir.
+Geohash related utilities implementation in Elixir.
 
 ## Support
 
