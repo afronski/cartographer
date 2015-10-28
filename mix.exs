@@ -45,7 +45,7 @@ defmodule Cartographer.Mixfile do
 
   defp description do
     """
-    Geohash algorithm implementation in Elixir.
+    Geohash related utilities implementation in Elixir.
     """
   end
 end
