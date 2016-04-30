@@ -8,6 +8,7 @@ Supported and tested on:
 
 - *Elixir 1.0*
 - *Elixir 1.1*
+- *Elixir 1.2*
 
 ## Building and Testing
 
