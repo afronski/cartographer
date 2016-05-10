@@ -10,3 +10,5 @@
 ## Code Quality
 
 - Prepare performance tests which are part of standard test suite.
+- Improve existing properties.
+- Memory and Performance optimizations.
